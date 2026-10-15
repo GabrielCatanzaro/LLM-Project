@@ -1,7 +1,14 @@
 # CP2/CP3 - Generative AI for Engineering
 ## Tutor de Python para iniciantes: fine-tuning de uma LLM local em GPU AMD (RX 6600)
 
-**Grupo:** (preencher nomes, 4 a 5 pessoas)
+**Grupo:** 
+
+Gabriel Gomes Catanzaro / RM93445 
+Lucas Gomes Alcântara / RM98766 
+Henrique Canali Cuzato / RM551326 
+Filipe Prado Menezes / RM98765 
+Cássio Eid Kobaysahi Yonetsuka / RM99678
+Pedro Henrique Salvitti Habiro / RM88166
 
 ## 1. Problema escolhido
 Alunos iniciantes em Python fazem perguntas simples e repetitivas (sintaxe, erros comuns, funcoes embutidas).
@@ -20,8 +27,7 @@ no formato de um tutor.
 Por que LoRA: treina so ~0,5% dos parametros, usa pouca memoria de GPU e salva um adaptador pequeno (alguns MB).
 
 ## 3. GPU: por que nao e CUDA
-CUDA e exclusivo de placas NVIDIA. A **RX 6600 e AMD**, entao usamos o backend **DirectML** (`torch-directml`),
-que roda no Windows sem WSL. O codigo (`gpu_utils.py`) tambem aceita CUDA, entao um colega com NVIDIA consegue rodar o mesmo projeto.
+CUDA e exclusivo de placas NVIDIA. A **RX 6600 e AMD**, entao usamos o backend **DirectML** (`torch-directml`). O codigo (`gpu_utils.py`) tambem aceita CUDA, entao alguem com NVIDIA consegue rodar o mesmo projeto.
 Se o computador tiver mais de uma GPU (ex.: grafico integrado), use `--gpu N` com o indice mostrado por `verificar_gpu.py`.
 
 ## 4. Como rodar (Windows, sem WSL)
