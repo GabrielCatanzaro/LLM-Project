@@ -30,7 +30,7 @@ Por que LoRA: treina so ~0,5% dos parametros, usa pouca memoria de GPU e salva u
 CUDA e exclusivo de placas NVIDIA. A **RX 6600 e AMD**, entao usamos o backend **DirectML** (`torch-directml`). O codigo (`gpu_utils.py`) tambem aceita CUDA, entao alguem com NVIDIA consegue rodar o mesmo projeto.
 Se o computador tiver mais de uma GPU (ex.: grafico integrado), use `--gpu N` com o indice mostrado por `verificar_gpu.py`.
 
-## 4. Como rodar (Windows, sem WSL)
+## 4. Como rodar
 Requisitos: Python **3.10** (recomendado) e driver AMD atualizado.
 
 ```powershell
